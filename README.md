@@ -1,6 +1,6 @@
 # Portfolio
 
---------------------------In progress--------------------------
+## __In progress!__
 
 Welcome to the GitHub page for my portfolio!
 
