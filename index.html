@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Nick Bell's Portfolio</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Nick Bell" />
+    <meta name="description" content="Nick Bell's developer portfolio" />
+    <meta name="keywords" content="Nick Bell,HTML,CSS,Frontend Developer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css"
+        integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scV93w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <header>
+        <ul class="nav">
+            <li class="nav-item">Nick Bell</li>
+            <li class="nav-item-icon"><a href="./resume/Nick-Bell-Resume.pdf" download><img src="../images/cv.png"
+                        alt="GitHub"></a></li>
+            <li class="nav-item-icon"><a href="https://www.linkedin.com/in/nick-bell32/"><img
+                        src="../images/linkedin.png" alt="LinkedIn"></a></li>
+            <li class="nav-item-icon"><a href="https://github.com/ntbell"><img src="../images/github.png"
+                        alt="GitHub"></a></li>
+        </ul>
+    </header>
+
+    <div id="fullPage">
+
+        <div class="section active" id="section0">
+            <div class="bg-image"></div>
+            <div class="s1">
+                <h1>Nick Bell</h1>
+                <h2>Front End Web Developer</h2>
+            </div>
+        </div>
+
+        <div class="section" id="section1">
+            <div class="s2">
+                <div class="s2-left">
+                    <h1>About</h1>
+                    <h2>test</h2>
+                    <p>more text</p>
+                </div>
+                <div class="s2-right">
+                    <img src="./images/profile.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section2">
+            <div class="slide active">
+                <div class="s3">
+                    <div class="slide-item">
+                        <h1>Description</h1>
+                        <a href="https://github.com/ntbell/custom-resolume">Custom Resolume</a>
+                    </div>
+                    <div class="slide-item">
+                        <h1>Picture</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="s3">
+                    <div class="slide-item">
+                        <h1>Description</h1>
+                        <a href="https://github.com/ntbell/Restaurant-Reservations">Restaurant Reservations</a>
+                    </div>
+                    <div class="slide-item">
+                        <h1>Picture</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="s3">
+                    <div class="slide-item">
+                        <h1>Description</h1>
+                        <a href="https://github.com/ntbell/Restaurant-Reservations">Restaurant Reservations</a>
+                    </div>
+                    <div class="slide-item">
+                        <h1>Picture</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="s3">
+                    <div class="slide-item">
+                        <h1>Description</h1>
+                        <a href="https://github.com/ntbell/Restaurant-Reservations">Restaurant Reservations</a>
+                    </div>
+                    <div class="slide-item">
+                        <h1>Picture</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="s3">
+                    <div class="slide-item">
+                        <h1>Description</h1>
+                        <a href="https://github.com/ntbell/Restaurant-Reservations">Restaurant Reservations</a>
+                    </div>
+                    <div class="slide-item">
+                        <h1>Picture</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section3">
+            <div class="s4">
+                <h1 class="s4-item-lg">I am currently open to new opportunities!</h1>
+                <div class="s4-item-sm">
+                    <a href="mailto:32nick777@gmail.com">
+                        <button>Contact</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"
+        integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        new fullpage('#fullPage', {
+            autoScrolling: true,
+            navigation: true,
+            navigationPosition: 'left',
+            slidesNavigation: true,
+            navigationTooltips: ['Home', 'About', 'Projects', 'Contact'],
+            scrollingSpeed: 1000,
+            sectionsColor: ['#F55249', '#49F58B', '#F5DF7A', '#5656F5'],
+            slidesNavPosition: 'bottom',
+            anchors: ['Home', 'About', 'Projects', 'Contact'],
+            recordHistory: false
+        });
+    </script>
+</body>
+
+</html>
