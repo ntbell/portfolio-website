@@ -47,7 +47,6 @@ a {
   width: 60%;
   height: 60%;
   margin: auto;
-  border: solid 1px white;
 }
 
 .s1-item, .s2-left, .s2-right, .s3-item, .s4-item {
@@ -147,13 +146,26 @@ a {
 }
 
 .s4-item-lg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: right;
+  font-size: 5.9vw;
   width: 70%;
 }
 
 .s4-item-sm {
-  width: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
 }
 
@@ -251,19 +263,19 @@ For blurry background (also remove .s1 stuff above)
 }
 
 For color gradients
-#section0 {
+#section1 {
     background: -webkit-gradient(linear, top left, bottom left, from(#F55249), to(#F5DF7A));
     background: -webkit-linear-gradient(#F55249, #F5DF7A);
     background: linear-gradient(#F55249,#F5DF7A);
 }
 
-#section1 {
+#section2 {
     background: -webkit-gradient(linear, top left, bottom left, from(#F5DF7A), to(#49F58B));
 	background: -webkit-linear-gradient(#F5DF7A, #49F58B);
 	background: linear-gradient(#F5DF7A,#49F58B);
 }
 
-#section2{
+#section3 {
     background: -webkit-gradient(linear, top left, bottom left, from(#49F58B), to(#5656F5));
     background: -webkit-linear-gradient(#49F58B, #5656F5);
     background: linear-gradient(#49F58B,#5656F5);
