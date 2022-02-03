@@ -31,9 +31,27 @@ p {
   font-size: 1.3em;
 }
 
-a {
-  text-align: center;
-  font-size: 3em;
+a button {
+  font-size: 1em;
+  color: white;
+  border-radius: 5%;
+  background-color: black;
+  border: solid 2px white;
+  width: 110px;
+  height: 50px;
+}
+
+a button:hover {
+  background-color: red;
+}
+
+a button:active {
+  background-color: white;
+  color: black;
+}
+
+a button:focus {
+  background-color: blue;
 }
 
 .s1, .s2, .s3, .s4 {
@@ -47,6 +65,7 @@ a {
   width: 60%;
   height: 60%;
   margin: auto;
+  border: solid 1px white;
 }
 
 .s1-item, .s2-left, .s2-right, .s3-item, .s4-item {
@@ -71,20 +90,6 @@ a {
 .s1 h2 {
   font-size: 4em;
   margin-bottom: 1;
-}
-
-.s1 a {
-  font-size: 1em;
-}
-
-.s1 a button {
-  font-size: 1em;
-  color: white;
-  border-radius: 5%;
-  background: black;
-  border: solid 2px white;
-  width: 110px;
-  height: 50px;
 }
 
 .s2-left {
@@ -161,26 +166,12 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 30%;
+  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-item-align: center;
       align-self: center;
-}
-
-.s4-item-sm a {
-  font-size: 1em;
-}
-
-.s4-item-sm a button {
-  font-size: 1em;
-  color: white;
-  border-radius: 5%;
-  background: black;
-  border: solid 2px white;
-  width: 110px;
-  height: 50px;
 }
 
 span {
@@ -239,6 +230,43 @@ span {
   width: 35px;
   height: auto;
   padding-left: 10px;
+}
+
+.slide-item {
+  text-align: center;
+  border: black 1px solid;
+}
+
+.slide-item a {
+  font-size: 2em;
+}
+
+.fp-controlArrow.fp-prev {
+  left: 100px;
+  border-right-color: black;
+}
+
+.fp-controlArrow.fp-next {
+  right: 100px;
+  border-left-color: black;
+}
+
+.fp-viewing-About span, .fp-viewing-Projects-0 span, .fp-viewing-Projects-1 span, .fp-viewing-Projects-2 span, .fp-viewing-Projects-3 span, .fp-viewing-Projects-4 span, .fp-viewing-Projects-5 span {
+  background: black !important;
+}
+
+.fp-viewing-About #fp-nav ul li .fp-tooltip, .fp-viewing-Projects-0 #fp-nav ul li .fp-tooltip, .fp-viewing-Projects-1 #fp-nav ul li .fp-tooltip, .fp-viewing-Projects-2 #fp-nav ul li .fp-tooltip, .fp-viewing-Projects-3 #fp-nav ul li .fp-tooltip, .fp-viewing-Projects-4 #fp-nav ul li .fp-tooltip, .fp-viewing-Projects-5 #fp-nav ul li .fp-tooltip {
+  color: black;
+}
+
+#fp-nav ul li, .fp-slidesNav ul li {
+  margin-top: 20px;
+}
+
+.fp-slidesNav {
+  left: auto !important;
+  top: 0%;
+  z-index: 1;
 }
 
 /*

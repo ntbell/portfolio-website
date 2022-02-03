@@ -3,6 +3,11 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+:root {
+    //--text-color: white;
+    //usage -- color: var(--text-color);
+}
+
 .section {
     z-index: 0;
 }
@@ -27,8 +32,28 @@ p {
 }
 
 a {
-    text-align: center;
-    font-size: 3em;
+    button {
+        font-size: 1em;
+        color: white;
+        border-radius: 5%;
+        background-color: black;
+        border: solid 2px white;
+        width: 110px;
+        height: 50px;
+    }
+    //Before click
+    button:hover {
+        background-color: red;
+    }
+    //During click
+    button:active {
+        background-color: white;
+        color: black;
+    }
+    //After clicking-resting state
+    button:focus {
+        background-color: blue;
+    }
 }
 
 .s1, .s2, .s3, .s4 {
@@ -39,7 +64,7 @@ a {
     width: 60%;
     height: 60%;
     margin: auto;
-    //border: solid 1px white;      // Testing only
+    border: solid 1px white;      // Testing only
 }
 
 .s1-item, .s2-left, .s2-right, .s3-item, .s4-item {
@@ -58,18 +83,6 @@ a {
     h2 {
         font-size: 4em;
         margin-bottom: 1;
-    }
-    a {
-        font-size: 1em;
-        button {
-            font-size: 1em;
-            color: white;
-            border-radius: 5%;
-            background: black;
-            border: solid 2px white;
-            width: 110px;
-            height: 50px;
-        }
     }
 }
 
@@ -124,21 +137,9 @@ a {
 
 .s4-item-sm {
     display: flex;
-    width: 30%;
+    width: 100%;
     justify-content: center;
     align-self: center;
-    a {
-        font-size: 1em;
-        button {
-            font-size: 1em;
-            color: white;
-            border-radius: 5%;
-            background: black;
-            border: solid 2px white;
-            width: 110px;
-            height: 50px;
-        }
-    }
 }
 
 span {
@@ -177,15 +178,54 @@ span {
         display: block;
         width: 35px;
         height: auto;
-        //width: 35px;
-        //height: auto;
         padding-left: 10px;
     }
 }
 
 .slide-item {
-    
+    text-align: center;
+    border: black 1px solid;
+    a {
+        font-size: 2em;
+    }
 }
+
+//Slides arrow left
+.fp-controlArrow.fp-prev {
+    left: 100px;
+    border-right-color: black;
+}
+
+//Slides arrow right
+.fp-controlArrow.fp-next {
+    right: 100px;
+    border-left-color: black;
+}
+
+.fp-viewing-About, .fp-viewing-Projects-0, .fp-viewing-Projects-1, .fp-viewing-Projects-2, .fp-viewing-Projects-3, .fp-viewing-Projects-4, .fp-viewing-Projects-5 {
+    //Color of navigation dots
+    span {
+        background: black !important;
+    }
+    //Color of navigation mouseover text
+    #fp-nav ul li .fp-tooltip {
+        color: black;
+    }
+}
+
+//Space between navigation dots
+#fp-nav ul li, .fp-slidesNav ul li {
+    margin-top: 20px;
+}
+
+//Slides navigation dots placed on top right side
+.fp-slidesNav {
+    left: auto !important;
+    top: 0%;
+    z-index: 1;  //Element moved underneath '.fp-controlArrow.fp-next' button
+}
+
+
 
 /*
 For blurry background (also remove .s1 stuff above)
